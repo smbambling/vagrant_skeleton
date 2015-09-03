@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+forge "https://forgeapi.puppetlabs.com"
+
+# use dependencies defined in metadata.json
+#metadata
+
+# use dependencies defined in Modulefile
+# modulefile
+
+mod 'tykeal/sslmgmt',
+  :git => 'https://github.com/tykeal/puppet-sslmgmt.git',
+  :ref => 'v1.0.0'
+
+mod 'puppetlabs-stdlib',
+  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git',
+  :ref => '4.4.0'

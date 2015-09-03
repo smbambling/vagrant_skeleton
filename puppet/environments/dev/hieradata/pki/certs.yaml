@@ -1,0 +1,13 @@
+---
+# Jasper Reports Server
+sslmgmt::certs:
+  \*.example.dev-server:
+    cert: |
+         Certificate:
+         -----BEGIN CERTIFICATE-----
+         << need a certifiate for this >>
+         -----END CERTIFICATE-----
+    key: |
+        -----BEGIN PRIVATE KEY-----
+        << need a key Certificate for this >>
+        -----END PRIVATE KEY----- 

@@ -1,0 +1,6 @@
+# Internal Certificate Authority CA #
+sslmgmt::ca:
+  internal_ca: |
+                   -----BEGIN CERTIFICATE-----
+                   << Need to work on generating a certifcate for this >>
+                   -----END CERTIFICATE-----
