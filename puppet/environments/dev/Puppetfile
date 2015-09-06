@@ -11,8 +11,8 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'tykeal/sslmgmt',
   :git => 'https://github.com/tykeal/puppet-sslmgmt.git',
-  :ref => 'v1.0.0'
+  :ref => 'bb13bc423b'
 
 mod 'puppetlabs-stdlib',
   :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git',
-  :ref => '4.4.0'
+  :ref => '4.7.0'

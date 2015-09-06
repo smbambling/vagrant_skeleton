@@ -56,7 +56,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     nodename1.vm.provision :shell, :path => "bootstrap_scripts/puppet_agent.sh"
     nodename1.vm.provision :puppet, 
       :manifests_path => "puppet/environments/dev/manifests",
-      :manifest_file => "install_pki_default.pp",
+      :manifest_file => "site.pp"
       :environment => "dev",
       :environment_path => "puppet/environments",
       :module_path => "puppet/environments/dev/modules",
