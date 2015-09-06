@@ -8,8 +8,8 @@ certs_for_system:
                   keyfilename: '/etc/pki/tls/private/*.example.dev-server.key'
                  }
 ca_certs_for_system:
- internal_ca:
+ example_dev_internal_ca:
    pkistore: 'custom'
    customstore: {
-                 certfilename: '/etc/pki/tls/certs/internal_ca.crt'
+                 certfilename: '/etc/pki/tls/certs/example_dev_internal_ca.crt'
                 }
