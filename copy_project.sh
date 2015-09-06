@@ -66,6 +66,18 @@ find "${location}/${project_name}" -type d \( -path ./.git \) -prune -o -type f 
 # Rename files that contain the default skeleton node name 'nodename1'
 find "${location}/${project_name}" -depth -type f -name "nodename1*" | while read FNAME; do mv "$FNAME" "${FNAME//nodename1/${node_name}}"; done
 
+# Create Skeleton.md file with pointer information
+cat << EOF > ${location}/${project_name}/skeleton.md
+# Vagrant Skelton Project Information
+
+This project was original cloned from
+the skeleton located at:
+
+$(awk '/url/ { print $3 }' .git/config)
+
+EOF
+
+# Print Information to start the VM provisioning
 cat << EOF
   To deploy the Vagrant environment, change 
   to the directory of your new project. Execute Lirarian-Puppet
